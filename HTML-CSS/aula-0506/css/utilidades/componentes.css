@@ -1,0 +1,29 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+.botao {
+    background: var(--cor-p1);
+    color: #ffffff;
+    padding: 20px 30px;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.botao:hover {
+    background: var(--cor-p2);
+}
+/* 
+@media (max-width: 1000px) {
+    .container {
+        max-width: 600px;
+    }
+  } */

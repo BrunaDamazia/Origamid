@@ -1,0 +1,131 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.conteudo {
+    text-align: right;
+    margin-right: 20px;
+    /* max-width: 45ch; */
+}
+
+.conteudo h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.conteudo p {
+    font-size: 1.2rem;
+}
+
+.imagem-bicicleta {
+    position: relative;
+    margin-left: 20px;
+}
+
+.imagem-bicicleta::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background: var(--cor-p1);
+    top: 30px;
+    left: -30px;
+    width: 60px;
+    height: 4px;
+    z-index: 2;
+}
+
+.titulo-vantagens h1 {
+    margin-right: 20px;
+    font: 900 5rem/1.5 'arial', sans-serif;
+    /* font-size: 3rem; */
+    text-align: right;
+    text-transform: uppercase;
+}
+
+/* .vantagens {
+    
+    
+} */
+
+.vantagens ul {
+    margin-left: 20px;
+    list-style: none;
+}
+
+.vantagens li {
+    position: relative;
+    max-width: 44ch;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.vantagem {
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.vantagem:hover {
+    border-left: 2px solid var(--cor-p1);
+    
+}
+
+.vantagem img {
+    margin-right: 20px;
+}
+
+.vantagem h3 {
+    margin-bottom: 20px;
+}
+
+.vantagem p {
+    grid-column: 2;
+}
+
+.copy {
+    height: 80px;
+    width: 100%;
+    margin-top: 80px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.copy p > span{
+    font-weight: 600;
+}
+
+@media (max-width: 1000px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 800px) {
+    .titulo-vantagens h1 {
+        text-align: left;
+        margin-left: 20px;
+        font: 900 4rem/1.5 'arial', sans-serif;
+    }
+
+    .vantagens ul {
+        margin-left: 0;
+    }
+
+    .vantagens {
+        justify-items: start;
+        align-items: start;
+    }
+}
+
+@media (max-width: 400px) {
+    .titulo-vantagens h1 {
+        text-align: left;
+        margin-left: 20px;
+        font: 900 2rem/1.5 'arial', sans-serif;
+    }
+}

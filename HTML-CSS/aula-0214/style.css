@@ -1,0 +1,51 @@
+body {
+  font-family: "Arial", sans-serif;
+}
+
+h1,
+h3,
+p {
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.titulo {
+  text-align: center;
+}
+
+.conteudo {
+  padding: 20px;
+  margin: 20px 0px;
+  background: #111111;
+  color: #ffffff;
+  display: grid;
+  border-radius: 4px;
+}
+
+.subtitulo {
+    margin-bottom: 20px;
+}
+
+.texto {
+  color: #b2b2b2;
+  margin-bottom: 20px;
+}
+
+span {
+  color: #febe01;
+}
+
+.botao {
+  padding: 10px;
+  color: #332200;
+  background: #febe01;
+  max-width: fit-content;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: 0.3s;
+}
